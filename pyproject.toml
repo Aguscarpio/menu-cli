@@ -3,11 +3,11 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "menu-cli"
-autors = [
+name = "fuzzy-menu-cli"
+authors = [
 	{name = "Agustín Carpio", email = "aguscarpio@gmail.com"}
 ]
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
 	"requests",
 	"fuzzyfinder==2.1.0",
@@ -23,6 +23,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+[project.scripts]
+menu-cli = "menu_cli.core:main"
 
 [project.urls]
 Homepage = "https://https://github.com/Aguscarpio/menu-cli"
